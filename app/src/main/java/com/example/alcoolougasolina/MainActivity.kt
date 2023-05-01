@@ -96,13 +96,13 @@ class MainActivity : AppCompatActivity() {
             val calculo = gasolinaPreco * percentual
 
             if (alcoolPreco <= calculo) {
-                resultado.setText("Álcool é mais vantajoso")
+                resultado.setText("Coloque Alcool!")
                 resultado.visibility = View.VISIBLE
                 resultado.keyListener = null
             } else {
                 resultado.visibility = View.VISIBLE
                 resultado.keyListener = null
-                resultado.setText("Gasolina é mais vantajoso")
+                resultado.setText("Coloque gasolina!")
             }
 
         } catch (e: java.lang.NumberFormatException) {
