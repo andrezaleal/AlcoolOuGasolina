@@ -9,8 +9,10 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="550dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="560dp"
+        android:minWidth="300dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
@@ -41,9 +43,12 @@
             android:layout_marginBottom="10dp"
             android:text="Gasolina ou Álcool?"
             android:textAlignment="center"
-            android:textColor="?android:attr/navigationBarColor"
+            android:textColor="?colorOnPrimary"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:maxLines="5"
+            android:scrollbars="vertical"
+            />
 
         <EditText
             android:id="@+id/precoGasolina"
@@ -53,7 +58,7 @@
             android:textAlignment="center"
             android:hint="Digite o preço da gasolina"
             android:inputType="numberDecimal"
-            android:textColorHint="#808080"
+
             />
 
         <EditText
@@ -64,13 +69,14 @@
             android:textAlignment="center"
             android:hint="Digite o preço do alcool"
             android:inputType="numberDecimal"
-            android:textColorHint="#808080"
+
             />
 
         <Switch
             android:id="@+id/swPercentual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="30dp"
             android:text="75%" />
