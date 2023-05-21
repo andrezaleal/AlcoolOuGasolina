@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Com qual combustível?</string>
-    <string name="title">Gasolina ou Álcool</string>
-    <string name="preco_gasosa">Digite o preço da gasolina</string>
-    <string name="preco_alchol">Type the price of alchool</string>
-    <string name="calcule">Calcule</string>
+    <string name="app_name">With which fuel?</string>
+    <string name="title">Gasoline or Alcohol?</string>
+    <string name="price_gasoline">Enter the price of gasoline</string>
+    <string name="price_alcohol">Enter the price of alcohol</string>
+    <string name="calculate">Calculate</string>
 </resources>

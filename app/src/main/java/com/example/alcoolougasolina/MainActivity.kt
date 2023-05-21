@@ -11,6 +11,7 @@ import android.widget.EditText
 import android.widget.Switch
 import java.math.BigDecimal
 import java.math.RoundingMode
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     var percentual: Double = 0.7
@@ -96,13 +97,21 @@ class MainActivity : AppCompatActivity() {
             val calculo = gasolinaPreco * percentual
 
             if (alcoolPreco <= calculo) {
-                resultado.setText("Coloque Alcool!")
+                if (Locale.getDefault().language == "pt") {
+                    resultado.setText("Coloque Álcool!")
+                } else {
+                    resultado.setText("Use Alcohol!")
+                }
                 resultado.visibility = View.VISIBLE
                 resultado.keyListener = null
             } else {
+                if (Locale.getDefault().language == "pt") {
+                    resultado.setText("Coloque Gasolina!")
+                } else {
+                    resultado.setText("Use Gasoline!")
+                }
                 resultado.visibility = View.VISIBLE
                 resultado.keyListener = null
-                resultado.setText("Coloque gasolina!")
             }
 
         } catch (e: java.lang.NumberFormatException) {
