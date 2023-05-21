@@ -9,10 +9,8 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:minHeight="560dp"
-        android:minWidth="300dp"
+        android:layout_width="646dp"
+        android:layout_height="910dp"
         android:layout_marginStart="3dp"
         android:layout_marginEnd="3dp"
         android:background="@drawable/rounded_layout"
@@ -27,8 +25,8 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="627dp"
+            android:layout_height="200dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="uma bomba de gasolina ilustrando o app"
             android:paddingVertical="10dp"
@@ -41,23 +39,24 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginBottom="10dp"
+            android:maxLines="5"
+            android:scrollbars="vertical"
             android:text="@string/title"
             android:textAlignment="center"
             android:textColor="?colorOnPrimary"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:maxLines="5"
-            android:scrollbars="vertical"
-            />
+            android:textSize="48dp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/precoGasolina"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textAlignment="center"
+            android:layout_margin="15dp"
             android:hint="@string/price_gasoline"
             android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="32dp"
 
             />
 
@@ -66,9 +65,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textAlignment="center"
             android:hint="@string/price_alcohol"
             android:inputType="numberDecimal"
+            android:layout_margin="15dp"
+            android:textAlignment="center"
+            android:textSize="32dp"
 
             />
 
@@ -76,10 +77,12 @@
             android:id="@+id/swPercentual"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:minHeight="48dp"
             android:layout_gravity="center"
             android:layout_marginHorizontal="30dp"
-            android:text="75%" />
+            android:minHeight="88dp"
+            android:layout_marginTop="15dp"
+            android:text="75%"
+            android:textSize="24dp"/>
 
         <EditText
             android:id="@+id/result"
@@ -92,6 +95,8 @@
             android:singleLine="true"
             android:textAlignment="center"
             android:textIsSelectable="false"
+            android:layout_marginTop="15dp"
+            android:textSize="30dp"
             android:visibility="invisible" />
 
         <Button
@@ -101,7 +106,10 @@
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
             android:backgroundTint="?colorSecondaryVariant"
-            android:text="@string/calculate" />
+            android:minWidth="200dp"
+            android:minHeight="92dp"
+            android:text="@string/calculate"
+            android:textSize="20dp"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

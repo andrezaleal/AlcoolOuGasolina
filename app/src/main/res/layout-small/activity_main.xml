@@ -10,23 +10,26 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="171dp"
+            android:layout_height="204dp"
             android:layout_gravity="center|center_horizontal|center_vertical"
             android:background="@drawable/rounded_layout"
             android:backgroundTint="?android:backgroundTint"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.49">
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="566dp"
-                android:layout_height="95dp"
+                android:layout_width="56dp"
+                android:layout_height="51dp"
                 android:layout_gravity="center_horizontal"
                 android:contentDescription="uma bomba de gasolina ilustrando o app"
                 android:paddingVertical="10dp"
@@ -38,53 +41,44 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="10dp"
                 android:maxLines="5"
                 android:scrollbars="vertical"
                 android:text="@string/title"
                 android:textAlignment="center"
                 android:textColor="?colorOnPrimary"
-                android:textSize="25sp"
+                android:textSize="10sp"
                 android:textStyle="bold" />
 
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/precoGasolina"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:orientation="horizontal">
+                android:ems="10"
+                android:hint="@string/price_gasoline"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="8sp"
 
-                <EditText
-                    android:id="@+id/precoGasolina"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:ems="10"
-                    android:hint="@string/price_gasoline"
-                    android:inputType="numberDecimal"
-                    android:textAlignment="center"
+                />
 
-                    />
-
-                <EditText
-                    android:id="@+id/precoAlcool"
-                    android:layout_width="300dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="5dp"
-                    android:ems="10"
-                    android:hint="@string/price_alcohol"
-                    android:inputType="numberDecimal"
-                    android:textAlignment="center"
-
-                    />
-            </LinearLayout>
+            <EditText
+                android:id="@+id/precoAlcool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/price_alcohol"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="8sp" />
 
             <Switch
                 android:id="@+id/swPercentual"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:minHeight="48dp"
-                android:text="75%" />
+                android:minHeight="28dp"
+                android:text="75%"
+                android:textSize="5sp" />
 
             <EditText
                 android:id="@+id/result"
@@ -97,22 +91,20 @@
                 android:singleLine="true"
                 android:textAlignment="center"
                 android:textIsSelectable="false"
+                android:textSize="8sp"
                 android:visibility="invisible" />
 
             <Button
                 android:id="@+id/btCalcular"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="28dp"
                 android:layout_gravity="center_horizontal"
+                android:width="5dp"
+                android:height="5dp"
                 android:backgroundTint="?colorSecondaryVariant"
-                android:layout_marginBottom="20dp"
-                android:minWidth="5dp"
-                android:minHeight="5dp"
                 android:text="@string/calculate"
-                android:textSize="12dp"
-                />
+                android:textSize="6sp" />
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
