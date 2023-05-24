@@ -2,6 +2,6 @@
     <string name="app_name">Com qual combustível?</string>
     <string name="title">Gasolina ou Álcool?</string>
     <string name="price_gasoline">Digite o preço da gasolina</string>
-    <string name="price_alcohol">Digite o preço da gasolina</string>
+    <string name="price_alcohol">Digite o preço da álcool</string>
     <string name="calculate">Calcular</string>
 </resources>

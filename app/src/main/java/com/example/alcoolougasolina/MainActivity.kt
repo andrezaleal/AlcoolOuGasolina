@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
             val calculo = gasolinaPreco * percentual
 
             if (alcoolPreco <= calculo) {
-                if (Locale.getDefault().language == "pt") {
+                if (Locale.getDefault().displayLanguage != "English") {
                     resultado.setText("Coloque Álcool!")
                 } else {
                     resultado.setText("Use Alcohol!")
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
                 resultado.visibility = View.VISIBLE
                 resultado.keyListener = null
             } else {
-                if (Locale.getDefault().language == "pt") {
+                if (Locale.getDefault().displayLanguage != "English"){
                     resultado.setText("Coloque Gasolina!")
                 } else {
                     resultado.setText("Use Gasoline!")
